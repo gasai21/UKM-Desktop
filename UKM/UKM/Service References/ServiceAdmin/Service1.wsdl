@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:30663/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:30663/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:30663/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/UKMService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_doLoginAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:doLoginAdmin" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doLoginAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:doLoginAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doDeleteAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:doDeleteAdmin" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doDeleteAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:doDeleteAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doUpdateAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:doUpdateAdmin" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doUpdateAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:doUpdateAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_convertukm_InputMessage">
+    <wsdl:part name="parameters" element="tns:convertukm" />
+  </wsdl:message>
+  <wsdl:message name="IService1_convertukm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:convertukmResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCaptain_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCaptain" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCaptain_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCaptainResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doInsertCaptainAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:doInsertCaptainAdmin" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doInsertCaptainAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:doInsertCaptainAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doDeleteCoach_InputMessage">
+    <wsdl:part name="parameters" element="tns:doDeleteCoach" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doDeleteCoach_OutputMessage">
+    <wsdl:part name="parameters" element="tns:doDeleteCoachResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doUpdateCoach_InputMessage">
+    <wsdl:part name="parameters" element="tns:doUpdateCoach" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doUpdateCoach_OutputMessage">
+    <wsdl:part name="parameters" element="tns:doUpdateCoachResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_convertcoach_InputMessage">
+    <wsdl:part name="parameters" element="tns:convertcoach" />
+  </wsdl:message>
+  <wsdl:message name="IService1_convertcoach_OutputMessage">
+    <wsdl:part name="parameters" element="tns:convertcoachResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCoach_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCoach" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCoach_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCoachResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doInsertCoach_InputMessage">
+    <wsdl:part name="parameters" element="tns:doInsertCoach" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doInsertCoach_OutputMessage">
+    <wsdl:part name="parameters" element="tns:doInsertCoachResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doDeleteUKM_InputMessage">
+    <wsdl:part name="parameters" element="tns:doDeleteUKM" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doDeleteUKM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:doDeleteUKMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doUpdateUKM_InputMessage">
+    <wsdl:part name="parameters" element="tns:doUpdateUKM" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doUpdateUKM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:doUpdateUKMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetUKM_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUKM" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetUKM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUKMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doInsertUKM_InputMessage">
+    <wsdl:part name="parameters" element="tns:doInsertUKM" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doInsertUKM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:doInsertUKMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doDeletePlace_InputMessage">
+    <wsdl:part name="parameters" element="tns:doDeletePlace" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doDeletePlace_OutputMessage">
+    <wsdl:part name="parameters" element="tns:doDeletePlaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doUpdatePlace_InputMessage">
+    <wsdl:part name="parameters" element="tns:doUpdatePlace" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doUpdatePlace_OutputMessage">
+    <wsdl:part name="parameters" element="tns:doUpdatePlaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_convertplace_InputMessage">
+    <wsdl:part name="parameters" element="tns:convertplace" />
+  </wsdl:message>
+  <wsdl:message name="IService1_convertplace_OutputMessage">
+    <wsdl:part name="parameters" element="tns:convertplaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetPlace_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlace" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetPlace_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doInsertPlace_InputMessage">
+    <wsdl:part name="parameters" element="tns:doInsertPlace" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doInsertPlace_OutputMessage">
+    <wsdl:part name="parameters" element="tns:doInsertPlaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doDeleteSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:doDeleteSchedule" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doDeleteSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:doDeleteScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doUpdateSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:doUpdateSchedule" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doUpdateSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:doUpdateScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchedule" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doInsertSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:doInsertSchedule" />
+  </wsdl:message>
+  <wsdl:message name="IService1_doInsertSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:doInsertScheduleResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="doLoginAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/doLoginAdmin" message="tns:IService1_doLoginAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/doLoginAdminResponse" message="tns:IService1_doLoginAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="doDeleteAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/doDeleteAdmin" message="tns:IService1_doDeleteAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/doDeleteAdminResponse" message="tns:IService1_doDeleteAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="doUpdateAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/doUpdateAdmin" message="tns:IService1_doUpdateAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/doUpdateAdminResponse" message="tns:IService1_doUpdateAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="convertukm">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/convertukm" message="tns:IService1_convertukm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/convertukmResponse" message="tns:IService1_convertukm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCaptain">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetCaptain" message="tns:IService1_GetCaptain_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetCaptainResponse" message="tns:IService1_GetCaptain_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="doInsertCaptainAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/doInsertCaptainAdmin" message="tns:IService1_doInsertCaptainAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/doInsertCaptainAdminResponse" message="tns:IService1_doInsertCaptainAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="doDeleteCoach">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/doDeleteCoach" message="tns:IService1_doDeleteCoach_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/doDeleteCoachResponse" message="tns:IService1_doDeleteCoach_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="doUpdateCoach">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/doUpdateCoach" message="tns:IService1_doUpdateCoach_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/doUpdateCoachResponse" message="tns:IService1_doUpdateCoach_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="convertcoach">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/convertcoach" message="tns:IService1_convertcoach_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/convertcoachResponse" message="tns:IService1_convertcoach_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCoach">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetCoach" message="tns:IService1_GetCoach_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetCoachResponse" message="tns:IService1_GetCoach_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="doInsertCoach">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/doInsertCoach" message="tns:IService1_doInsertCoach_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/doInsertCoachResponse" message="tns:IService1_doInsertCoach_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="doDeleteUKM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/doDeleteUKM" message="tns:IService1_doDeleteUKM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/doDeleteUKMResponse" message="tns:IService1_doDeleteUKM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="doUpdateUKM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/doUpdateUKM" message="tns:IService1_doUpdateUKM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/doUpdateUKMResponse" message="tns:IService1_doUpdateUKM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUKM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetUKM" message="tns:IService1_GetUKM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetUKMResponse" message="tns:IService1_GetUKM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="doInsertUKM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/doInsertUKM" message="tns:IService1_doInsertUKM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/doInsertUKMResponse" message="tns:IService1_doInsertUKM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="doDeletePlace">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/doDeletePlace" message="tns:IService1_doDeletePlace_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/doDeletePlaceResponse" message="tns:IService1_doDeletePlace_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="doUpdatePlace">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/doUpdatePlace" message="tns:IService1_doUpdatePlace_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/doUpdatePlaceResponse" message="tns:IService1_doUpdatePlace_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="convertplace">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/convertplace" message="tns:IService1_convertplace_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/convertplaceResponse" message="tns:IService1_convertplace_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlace">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetPlace" message="tns:IService1_GetPlace_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetPlaceResponse" message="tns:IService1_GetPlace_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="doInsertPlace">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/doInsertPlace" message="tns:IService1_doInsertPlace_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/doInsertPlaceResponse" message="tns:IService1_doInsertPlace_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="doDeleteSchedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/doDeleteSchedule" message="tns:IService1_doDeleteSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/doDeleteScheduleResponse" message="tns:IService1_doDeleteSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="doUpdateSchedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/doUpdateSchedule" message="tns:IService1_doUpdateSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/doUpdateScheduleResponse" message="tns:IService1_doUpdateSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSchedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetSchedule" message="tns:IService1_GetSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetScheduleResponse" message="tns:IService1_GetSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="doInsertSchedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/doInsertSchedule" message="tns:IService1_doInsertSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/doInsertScheduleResponse" message="tns:IService1_doInsertSchedule_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="doLoginAdmin">
+      <soap:operation soapAction="http://tempuri.org/IService1/doLoginAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doDeleteAdmin">
+      <soap:operation soapAction="http://tempuri.org/IService1/doDeleteAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doUpdateAdmin">
+      <soap:operation soapAction="http://tempuri.org/IService1/doUpdateAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="convertukm">
+      <soap:operation soapAction="http://tempuri.org/IService1/convertukm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCaptain">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetCaptain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doInsertCaptainAdmin">
+      <soap:operation soapAction="http://tempuri.org/IService1/doInsertCaptainAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doDeleteCoach">
+      <soap:operation soapAction="http://tempuri.org/IService1/doDeleteCoach" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doUpdateCoach">
+      <soap:operation soapAction="http://tempuri.org/IService1/doUpdateCoach" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="convertcoach">
+      <soap:operation soapAction="http://tempuri.org/IService1/convertcoach" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCoach">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetCoach" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doInsertCoach">
+      <soap:operation soapAction="http://tempuri.org/IService1/doInsertCoach" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doDeleteUKM">
+      <soap:operation soapAction="http://tempuri.org/IService1/doDeleteUKM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doUpdateUKM">
+      <soap:operation soapAction="http://tempuri.org/IService1/doUpdateUKM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUKM">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetUKM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doInsertUKM">
+      <soap:operation soapAction="http://tempuri.org/IService1/doInsertUKM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doDeletePlace">
+      <soap:operation soapAction="http://tempuri.org/IService1/doDeletePlace" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doUpdatePlace">
+      <soap:operation soapAction="http://tempuri.org/IService1/doUpdatePlace" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="convertplace">
+      <soap:operation soapAction="http://tempuri.org/IService1/convertplace" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlace">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetPlace" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doInsertPlace">
+      <soap:operation soapAction="http://tempuri.org/IService1/doInsertPlace" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doDeleteSchedule">
+      <soap:operation soapAction="http://tempuri.org/IService1/doDeleteSchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doUpdateSchedule">
+      <soap:operation soapAction="http://tempuri.org/IService1/doUpdateSchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSchedule">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetSchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doInsertSchedule">
+      <soap:operation soapAction="http://tempuri.org/IService1/doInsertSchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:30663/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

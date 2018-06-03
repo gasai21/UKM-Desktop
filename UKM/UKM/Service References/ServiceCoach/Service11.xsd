@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:30663/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/UKMService" />
+  <xs:element name="doLoginAdmin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="doLoginAdminResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="doLoginAdminResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="doDeleteAdmin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="doDeleteAdminResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="doDeleteAdminResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="doUpdateAdmin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/UKMService" minOccurs="0" name="acc" nillable="true" type="q1:Account" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="doUpdateAdminResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="doUpdateAdminResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="convertukm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ukm" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="convertukmResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="convertukmResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCaptain">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCaptainResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/UKMService" minOccurs="0" name="GetCaptainResult" nillable="true" type="q2:ArrayOfAccount" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="doInsertCaptainAdmin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/UKMService" minOccurs="0" name="acc" nillable="true" type="q3:Account" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/UKMService" minOccurs="0" name="ukm" nillable="true" type="q4:StudentUKM" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="doInsertCaptainAdminResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="doInsertCaptainAdminResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="doDeleteCoach">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="doDeleteCoachResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="doDeleteCoachResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="doUpdateCoach">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/UKMService" minOccurs="0" name="acc" nillable="true" type="q5:Coach" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="doUpdateCoachResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="doUpdateCoachResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCoach">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCoachResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/UKMService" minOccurs="0" name="GetCoachResult" nillable="true" type="q6:ArrayOfCoach" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="doInsertCoach">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/UKMService" minOccurs="0" name="acc" nillable="true" type="q7:Coach" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="doInsertCoachResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="doInsertCoachResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

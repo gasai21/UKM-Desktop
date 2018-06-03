@@ -1,0 +1,15 @@
+c:\users\pangling\documents\visual studio 2012\Projects\UKM\UKM\bin\Debug\UKM.exe
+c:\users\pangling\documents\visual studio 2012\Projects\UKM\UKM\bin\Debug\UKM.pdb
+c:\users\pangling\documents\visual studio 2012\Projects\UKM\UKM\obj\Debug\UKM.csprojResolveAssemblyReference.cache
+c:\users\pangling\documents\visual studio 2012\Projects\UKM\UKM\obj\Debug\UKM.Form1.resources
+c:\users\pangling\documents\visual studio 2012\Projects\UKM\UKM\obj\Debug\UKM.Properties.Resources.resources
+c:\users\pangling\documents\visual studio 2012\Projects\UKM\UKM\obj\Debug\UKM.csproj.GenerateResource.Cache
+c:\users\pangling\documents\visual studio 2012\Projects\UKM\UKM\obj\Debug\UKM.exe
+c:\users\pangling\documents\visual studio 2012\Projects\UKM\UKM\obj\Debug\UKM.pdb
+C:\Users\Pangling\documents\visual studio 2012\Projects\UKM\UKM\obj\Debug\UKM.Menu.resources
+C:\Users\Pangling\Documents\Visual Studio 2012\Projects\UKM\UKM\obj\Debug\UKM.ManageCaptain.resources
+C:\Users\Pangling\Documents\Visual Studio 2012\Projects\UKM\UKM\obj\Debug\UKM.ManagementCoach.resources
+C:\Users\Pangling\Documents\Visual Studio 2012\Projects\UKM\UKM\obj\Debug\UKM.ManagementPlace.resources
+C:\Users\Pangling\Documents\Visual Studio 2012\Projects\UKM\UKM\obj\Debug\UKM.ManagementSchedule.resources
+C:\Users\Pangling\Documents\Visual Studio 2012\Projects\UKM\UKM\obj\Debug\UKM.ManagementUKM.resources
+C:\Users\Pangling\Documents\Visual Studio 2012\Projects\UKM\UKM\bin\Debug\UKM.exe.config

@@ -1,0 +1,5 @@
+c:\users\pangling\documents\visual studio 2012\Projects\UKMService\UKMService\bin\UKMService.dll
+c:\users\pangling\documents\visual studio 2012\Projects\UKMService\UKMService\bin\UKMService.pdb
+c:\users\pangling\documents\visual studio 2012\Projects\UKMService\UKMService\obj\Debug\UKMService.dll
+c:\users\pangling\documents\visual studio 2012\Projects\UKMService\UKMService\obj\Debug\UKMService.pdb
+c:\users\pangling\documents\visual studio 2012\Projects\UKMService\UKMService\obj\Debug\UKMService.csprojResolveAssemblyReference.cache
